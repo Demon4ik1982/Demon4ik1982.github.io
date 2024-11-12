@@ -1,0 +1,36 @@
+@use "../../style/vars" as vars;
+
+.sub-task-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 57px);
+}
+
+.sub-menu-wrapper {
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow {
+  box-shadow: 0 4px 4px 0 vars.$modalBackground;
+}
+
+.sub-task-info-wrapper {
+  max-height: calc(1000vh - 57px - 89px);
+  overflow-y: auto;
+}
+
+
+.sub-task-info-wrapper::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sub-task-info-wrapper::-webkit-scrollbar-track {
+  background-color: vars.$whiteColor;
+  border-radius: 4px;
+}
+
+.sub-task-info-wrapper::-webkit-scrollbar-thumb {
+  background-color: vars.$scrollThumb;
+  border-radius: 4px;
+}
+
